@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador de Palavras Online Grátis | Active Dics</title>
+  <meta name="description" content="Conte palavras, caracteres e frases do seu texto instantaneamente. Ferramenta gratuita para redatores, estudantes e profissionais. Sem cadastro." />
+  <meta name="keywords" content="contador de palavras, contar palavras online, contador de caracteres, contador de frases, ferramenta para redatores" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://activedics.com/contador-palavras.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>📝 Contador de Palavras Online</h1>
+      <p>Cole ou escreva seu texto e veja instantaneamente o número de palavras, caracteres e frases.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Início</a>
+      <span>›</span>
+      <span>Contador de Palavras</span>
+    </div>
+  </div>
+
+  <!-- Ferramenta -->
+  <section class="section">
+    <div class="container">
+      <div class="tool-box">
+        <h2>📝 Contador de Palavras</h2>
+
+        <textarea
+          id="word-input"
+          placeholder="Cole ou escreva seu texto aqui..."
+          aria-label="Campo de texto para contagem"
+        ></textarea>
+
+        <div class="word-stats">
+          <div class="word-stat">
+            <span class="num" id="wc-words">0</span>
+            <span class="lbl">Palavras</span>
+          </div>
+          <div class="word-stat">
+            <span class="num" id="wc-chars">0</span>
+            <span class="lbl">Caracteres</span>
+          </div>
+          <div class="word-stat">
+            <span class="num" id="wc-chars-no-space">0</span>
+            <span class="lbl">Sem Espaços</span>
+          </div>
+          <div class="word-stat">
+            <span class="num" id="wc-sentences">0</span>
+            <span class="lbl">Frases</span>
+          </div>
+          <div class="word-stat">
+            <span class="num" id="wc-paragraphs">0</span>
+            <span class="lbl">Parágrafos</span>
+          </div>
+          <div class="word-stat">
+            <span class="num" id="wc-read-time">0 min</span>
+            <span class="lbl">Leitura</span>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-outline btn-sm" id="wc-clear">✕ Limpar Texto</button>
+          <button class="btn btn-outline btn-sm" id="wc-copy">📋 Copiar Texto</button>
+        </div>
+      </div>
+
+      <!-- Conteúdo SEO -->
+      <div class="seo-content">
+
+        <h2>Por Que Contar Palavras é Importante?</h2>
+        <p>A contagem de palavras é uma das tarefas mais simples e ao mesmo tempo mais essenciais para quem trabalha com texto. Seja você um redator, estudante, jornalista, escritor ou profissional de marketing, saber exatamente quantas palavras seu texto possui é fundamental para atender requisitos, otimizar conteúdo e garantir a qualidade da comunicação.</p>
+
+        <p>Nosso <strong>contador de palavras online</strong> vai além da simples contagem: ele também mostra o número de caracteres (com e sem espaços), frases, parágrafos e até o tempo estimado de leitura. Tudo isso em tempo real, enquanto você digita ou cola o texto.</p>
+
+        <h2>Para Quem é o Contador de Palavras?</h2>
+
+        <h3>Redatores e Copywriters</h3>
+        <p>Profissionais de redação frequentemente precisam entregar textos com um número específico de palavras. Artigos de blog, descrições de produtos, posts para redes sociais — cada formato tem seu tamanho ideal. Com o contador de palavras, você acompanha em tempo real se está dentro do limite exigido pelo cliente ou pela plataforma.</p>
+
+        <h3>Estudantes e Acadêmicos</h3>
+        <p>Trabalhos escolares, monografias, dissertações e artigos científicos geralmente têm requisitos mínimos e máximos de palavras. O contador ajuda a garantir que você está dentro do intervalo exigido pela instituição, evitando penalizações por textos muito curtos ou muito longos.</p>
+
+        <h3>Profissionais de SEO</h3>
+        <p>No marketing digital, o tamanho do conteúdo é um fator relevante para o ranqueamento nos mecanismos de busca. Artigos mais completos e detalhados tendem a ter melhor desempenho no Google. O contador de palavras ajuda a garantir que seu conteúdo tem a extensão adequada para competir nas buscas orgânicas.</p>
+
+        <h3>Jornalistas e Escritores</h3>
+        <p>Jornais, revistas e editoras têm limites rígidos de espaço. Saber o número exato de palavras de uma matéria ou capítulo é essencial para o planejamento editorial. Escritores também usam contadores para acompanhar o progresso de seus livros e manter a consistência entre capítulos.</p>
+
+        <h3>Tradutores</h3>
+        <p>A maioria dos serviços de tradução é cobrada por palavra. Saber exatamente quantas palavras tem um documento é fundamental para calcular o custo do serviço e emitir orçamentos precisos.</p>
+
+        <h2>O Que Nosso Contador Mede?</h2>
+        <p>Nossa ferramenta oferece uma análise completa do seu texto:</p>
+
+        <ul>
+          <li><strong>Palavras:</strong> Conta todas as palavras separadas por espaços ou quebras de linha</li>
+          <li><strong>Caracteres (com espaços):</strong> Total de caracteres incluindo espaços em branco</li>
+          <li><strong>Caracteres (sem espaços):</strong> Total de caracteres excluindo espaços — útil para limites de SMS e redes sociais</li>
+          <li><strong>Frases:</strong> Conta as frases com base em pontuação final (ponto, exclamação, interrogação)</li>
+          <li><strong>Parágrafos:</strong> Conta os blocos de texto separados por linhas em branco</li>
+          <li><strong>Tempo de leitura:</strong> Estimativa baseada na velocidade média de leitura de 200 palavras por minuto</li>
+        </ul>
+
+        <h2>Dicas Para Escrever Textos de Qualidade</h2>
+
+        <h3>Defina o Tamanho Ideal Antes de Escrever</h3>
+        <p>Antes de começar a escrever, saiba qual é o tamanho ideal para o seu objetivo. Um post de blog informativo geralmente tem entre 800 e 1.500 palavras. Um artigo de SEO aprofundado pode ter 2.000 a 3.000 palavras. Uma descrição de produto costuma ter entre 100 e 300 palavras.</p>
+
+        <h3>Qualidade Antes de Quantidade</h3>
+        <p>Embora o número de palavras seja importante, a qualidade do conteúdo sempre deve vir em primeiro lugar. Um texto de 500 palavras bem escrito, claro e útil é muito mais valioso do que um texto de 2.000 palavras cheio de repetições e informações irrelevantes.</p>
+
+        <h3>Revise Sempre</h3>
+        <p>Após escrever, use o contador para verificar o tamanho e, em seguida, releia o texto com atenção. Elimine palavras desnecessárias, corrija erros gramaticais e certifique-se de que o conteúdo flui naturalmente.</p>
+
+        <div class="info-box">
+          💡 <strong>Dica:</strong> O tempo de leitura estimado é calculado com base em 200 palavras por minuto, que é a velocidade média de leitura de um adulto. Textos técnicos ou complexos podem levar mais tempo.
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/word-counter.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste de Digitação Online Grátis — Meça seu WPM | Active Dics</title>
+  <meta name="description" content="Faça o teste de digitação online e descubra sua velocidade em palavras por minuto (WPM) e sua precisão. Gratuito, sem cadastro, direto no navegador." />
+  <meta name="keywords" content="teste de digitação, velocidade de digitação, WPM, palavras por minuto, teste de digitação online, melhorar digitação" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://activedics.com/teste-digitacao.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>⌨️ Teste de Digitação Online</h1>
+      <p>Descubra sua velocidade de digitação em palavras por minuto (WPM) e veja sua precisão em tempo real.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Início</a>
+      <span>›</span>
+      <span>Teste de Digitação</span>
+    </div>
+  </div>
+
+  <!-- Ferramenta -->
+  <section class="section">
+    <div class="container">
+      <div class="tool-box">
+        <h2>⌨️ Teste de Digitação</h2>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <span class="stat-value" id="wpm-display">0</span>
+            <span class="stat-label">WPM</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="acc-display">100%</span>
+            <span class="stat-label">Precisão</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="time-display">60</span>
+            <span class="stat-label">Segundos</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="errors-display">0</span>
+            <span class="stat-label">Erros</span>
+          </div>
+        </div>
+
+        <div id="typing-text-display" aria-label="Texto para digitar"></div>
+
+        <textarea
+          id="typing-input"
+          placeholder="Clique aqui e comece a digitar para iniciar o teste..."
+          rows="3"
+          aria-label="Campo de digitação"
+          disabled
+        ></textarea>
+
+        <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap;">
+          <button class="btn btn-blue" id="start-btn">▶ Iniciar Teste</button>
+          <button class="btn btn-outline" id="reset-btn">↺ Reiniciar</button>
+        </div>
+
+        <!-- Tela de resultado -->
+        <div class="result-screen" id="result-screen">
+          <h3>🎉 Teste Concluído!</h3>
+          <div class="result-grid">
+            <div class="result-item">
+              <span class="big-num" id="result-wpm">0</span>
+              <span class="label">Palavras por Minuto</span>
+            </div>
+            <div class="result-item">
+              <span class="big-num" id="result-acc">0%</span>
+              <span class="label">Precisão</span>
+            </div>
+            <div class="result-item">
+              <span class="big-num" id="result-errors">0</span>
+              <span class="label">Erros</span>
+            </div>
+          </div>
+          <p id="result-msg" style="color:var(--text-muted);margin-bottom:20px;"></p>
+          <button class="btn btn-blue btn-lg" id="try-again-btn">↺ Tentar Novamente</button>
+        </div>
+      </div>
+
+      <!-- Conteúdo SEO -->
+      <div class="seo-content">
+
+        <h2>O Que é Velocidade de Digitação?</h2>
+        <p>A velocidade de digitação é a medida de quantas palavras uma pessoa consegue digitar em um minuto, expressa pela sigla <strong>WPM</strong> (do inglês <em>Words Per Minute</em>, ou Palavras Por Minuto). Essa métrica é amplamente utilizada em processos seletivos, treinamentos corporativos e avaliações de produtividade no ambiente de trabalho.</p>
+
+        <p>Além da velocidade, outro fator igualmente importante é a <strong>precisão</strong> — ou seja, a porcentagem de caracteres digitados corretamente. De nada adianta digitar muito rápido se metade das palavras estiver errada. O equilíbrio entre velocidade e precisão é o que define um bom digitador.</p>
+
+        <h2>Qual é a Velocidade Média de Digitação?</h2>
+        <p>A velocidade média de digitação varia bastante dependendo do perfil do usuário. Veja uma referência geral:</p>
+
+        <ul>
+          <li><strong>Iniciante:</strong> 20 a 35 WPM — quem está aprendendo ou usa o computador esporadicamente</li>
+          <li><strong>Usuário casual:</strong> 35 a 55 WPM — a maioria das pessoas que usa o computador no dia a dia</li>
+          <li><strong>Usuário intermediário:</strong> 55 a 75 WPM — profissionais que digitam com frequência</li>
+          <li><strong>Usuário avançado:</strong> 75 a 100 WPM — secretárias, jornalistas, programadores experientes</li>
+          <li><strong>Digitador profissional:</strong> acima de 100 WPM — estenógrafos e campeões de digitação</li>
+        </ul>
+
+        <p>O recorde mundial de digitação ultrapassa 200 WPM, mas para a maioria das pessoas, chegar a 70–80 WPM com boa precisão já é um excelente resultado.</p>
+
+        <h2>Como Funciona o Nosso Teste de Digitação?</h2>
+        <p>O funcionamento é simples e intuitivo. Ao clicar em "Iniciar Teste", um texto é exibido na tela. Você deve digitá-lo no campo abaixo o mais rápido e corretamente possível. O cronômetro começa automaticamente quando você começa a digitar.</p>
+
+        <p>Durante o teste, o sistema destaca em verde as letras corretas e em vermelho as incorretas, dando feedback visual em tempo real. Ao final dos 60 segundos, o resultado é exibido com sua velocidade em WPM, precisão e número de erros.</p>
+
+        <h2>Dicas Para Melhorar Sua Velocidade de Digitação</h2>
+        <p>Se você quer aumentar sua velocidade de digitação, aqui estão algumas dicas práticas e comprovadas:</p>
+
+        <h3>1. Use Todos os Dedos (Método Touch Typing)</h3>
+        <p>O método de digitação mais eficiente é o <em>touch typing</em>, que consiste em usar todos os dez dedos sem precisar olhar para o teclado. Cada dedo é responsável por um conjunto específico de teclas. Aprender esse método pode parecer difícil no início, mas com prática, a velocidade aumenta significativamente.</p>
+
+        <h3>2. Mantenha a Postura Correta</h3>
+        <p>Sente-se com as costas retas, os pés apoiados no chão e os pulsos levemente elevados. Uma boa postura reduz a fadiga e permite digitar por mais tempo sem desconforto.</p>
+
+        <h3>3. Pratique Regularmente</h3>
+        <p>Como qualquer habilidade, a digitação melhora com a prática constante. Dedique 15 a 20 minutos por dia para treinar e você verá resultados em poucas semanas.</p>
+
+        <h3>4. Foque na Precisão Antes da Velocidade</h3>
+        <p>Muitas pessoas cometem o erro de tentar digitar rápido antes de dominar a precisão. O ideal é começar devagar, garantindo que cada tecla seja pressionada corretamente, e aumentar a velocidade gradualmente.</p>
+
+        <h3>5. Aprenda os Atalhos de Teclado</h3>
+        <p>Conhecer atalhos como Ctrl+C, Ctrl+V, Ctrl+Z e outros pode economizar muito tempo no dia a dia e reduzir a dependência do mouse, tornando seu fluxo de trabalho mais ágil.</p>
+
+        <h2>Por Que Melhorar a Velocidade de Digitação?</h2>
+        <p>Em um mundo cada vez mais digital, saber digitar bem é uma habilidade profissional valiosa. Profissionais que digitam mais rápido conseguem responder e-mails, escrever relatórios e produzir conteúdo em menos tempo, aumentando sua produtividade geral.</p>
+
+        <p>Além disso, muitas empresas exigem uma velocidade mínima de digitação em processos seletivos para cargos administrativos, de atendimento ao cliente e de suporte técnico. Ter um bom desempenho no teste de digitação pode ser o diferencial que você precisa.</p>
+
+        <p>Use nossa ferramenta regularmente para acompanhar sua evolução e ver como sua velocidade e precisão melhoram com o tempo. Boa sorte!</p>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/typing-test.js"></script>
+</body>
+</html>
