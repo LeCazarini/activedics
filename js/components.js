@@ -87,4 +87,20 @@
   var fp = document.getElementById('footer-placeholder');
   if (fp) fp.outerHTML = footerHTML;
 
+  /* ── Cookie Banner ── */
+  var cookieBanner = `
+  <div id="cookie-banner" role="dialog" aria-label="Aviso de cookies" aria-live="polite">
+    <p>
+      Usamos cookies para personalizar anúncios e melhorar sua experiência no Active Dics.
+      Ao continuar navegando, você concorda com a nossa
+      <a href="privacidade.html">Política de Privacidade</a>.
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept">Aceitar Todos</button>
+      <button id="cookie-decline">Recusar</button>
+    </div>
+  </div>`;
+
+  document.body.insertAdjacentHTML('beforeend', cookieBanner);
+
 })();
